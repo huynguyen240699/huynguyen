@@ -249,7 +249,16 @@
 	.slider .container .text p {
 		margin: 0;
     	padding: 30px 0px;
+    }
+    .footer-top{
+    	margin-top: 25px;
+    }
+    .footer-top-left a i{
+    	top: 14.5%;
     }	
+    .footer-top-right{
+    	padding-bottom: 15px;
+    }
 }
 @media only screen and (max-width: 425px){
  	.header-right-top .search a i{
