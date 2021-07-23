@@ -195,18 +195,27 @@ content{
 .slider .container .text{
 	position: absolute;
 	top: 19%;
-	left: 19.5%;
 }
 .slider .container .text p{
 	font-size: 80px;
 	color: #ffffff;
 }
-.slider .container .text a{
-	color: #ffffff;
-    font-size: 20px;
-    border: 1px solid;
-    padding: 18px 5px;
-    border-radius: 30px;
+.slider .container .text span{
+	font-family: Impact;
+}
+.slider .container .text input {
+    width: 50%;
+    padding: 20px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+.slider .container .text input:hover{
+	background-color: lightblue;
 }
 .slider .container .background-img{
     width: 18%;
@@ -229,9 +238,29 @@ content{
 	width: 100%;
 	max-height: 310px;
 }
+.control-radio {
+    width: 15px;
+    position: absolute;
+    top: 40.5%;
+    right: 53px;
+    z-index: 3;
+}
+.control-radio ul{
+	padding: 0;
+}
+.control-radio ul li {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 20px 0;
+    transition: ease-in 0.3s;
+    list-style-type: none;
+}
+.control-radio ul li.active, .control-radio ul li:hover {
+    background-color: #ee4054;
+}
 .content-product{
 	width: 100%;
-	padding-top: 100px;
 	position: relative;
 }
 .content-product .product-img{
@@ -253,48 +282,93 @@ content{
 	position: relative;
 }
 .content-product .container{
-	position: absolute;
+	position: relative;
 	top: 175px;
-	left: 360px;
 }
 .content-product .banner-top{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
-.content-product .banner-top-img{
+.content-product .banner-top::before{
+	content: url("./images/image-corn.png");
+	position: absolute;
+	z-index: -3;
+	top: 20%;
+	left: -17%;
+}
+.content-product .banner-top::after{
+	content: url("./images/image-corn1.png");
+	position: absolute;
+	z-index: -3;
+	top: -2%;
+   right: -10%;
+}
+.content-product .banner-top-img{	
 	width: 25%;
 	position: relative;
+}
+.content-product .banner-top div:hover::after {	
+    display: block;
+}
+.content-product .banner-top div::after {
+    content: "";
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border: 3px solid #dd8939;
+    z-index: 4;
+    display: none;
+}
+.content-product .banner-bottom div:hover::after {	
+    display: block;
+}
+.content-product .banner-bottom div::after {
+    content: "";
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border: 3px solid #dd8939;
+    z-index: 3;
+    display: none;
 }
 .content-product .banner-top-img:nth-last-of-type(1)::before{
 	content: "Ideal Gold";
 	position: absolute;
-	right: 25px;
-   font-size: 24px;
-   top: 240px;
+	right: 15px;
+   font-size: 2px;
+   bottom: 20px;
+   font-family: VNlucida Handwriting;
 }
 .content-product .banner-top-img:nth-last-of-type(2)::before{
 	content: "Ideal Food";
 	position: absolute;
-	right: 25px;
-   font-size: 24px;
-   top: 240px;
+	right: 15px;
+   font-size: 22px;
+   bottom: 20px;
    color: #ffffff;
+   font-family: VNlucida Handwriting;
 }
 .content-product .banner-top-img:nth-last-of-type(3)::before{
 	content: "Healthy Nutty";
 	position: absolute;
-	right: 25px;
-   font-size: 24px;
-   top: 240px;
+	right: 15px;
+   font-size: 22px;
+   bottom: 20px;v
+   font-family: VNlucida Handwriting;
 }
 .content-product .banner-top-img:nth-last-of-type(4)::before{
 	content: "Dried Seafood Hoi Mei";
 	position: absolute;
-	right: 25px;
-   font-size: 24px;
-   top: 240px;
+	right: 15px;
+   font-size: 22px;
+   bottom: 20px;
    color: #ffffff;
+   font-family: VNlucida Handwriting;
 }
 .content-product .banner-top-img img{
 	width: 100%;
@@ -316,6 +390,7 @@ content{
 }
 .content-product .banner-bottom-img{
 	width: 50%;
+	position: relative;
 }
 .content-product .banner-bottom-img img{
 	width: 100%;
@@ -402,14 +477,10 @@ content{
 }
 footer{
 	width: 100%;
-	margin-top: 58%;
+	margin-top: 15%;
 	position: relative;
-}
-footer .background-img{
-	width: 100%;
-}
-footer .background-img img{
-	width: 100%;
+	background-image: url("./images/footer-bg.png");
+	background-size: cover;
 }
 .call-and-help{
 	width: 100%;
@@ -438,7 +509,7 @@ footer .background-img img{
 	font-size: 30px;
 	position: absolute;
 	right: 105px;
-    top: -5px;
+   top: -5px;
 }
 .call-and-help .call{
 	width: 50%;
@@ -461,11 +532,7 @@ footer .background-img img{
     top: -5px;
 }
 footer .container{
-	position: absolute;
-	top: 0;
-	left: 19%;
-	width: 100%;
-	margin-left: -6px;
+	position: relative;
 }
 .footer-top{
 	width: 100%;
@@ -487,7 +554,7 @@ footer .container{
 	font-size: 14px;
 }
 .footer-top-left input{
-	width: 470px;
+	width: 92%;
 	height: 40px;
 	border-radius: 30px;
 	border: 1px solid #ffffff;
@@ -496,7 +563,7 @@ footer .container{
 .footer-top-left a i{
 	position: absolute;
 	left: 37%;
-    top: 28%;
+    top: 29%;
     color: #EE4053;
 }
 .footer-top-right{
@@ -557,4 +624,7 @@ footer .container{
 .footer-bottom span{
 	color: #dd8939 ;
 }
-1631561728363
+.footer-bottom p{
+	margin: 0;
+	padding: 15px 0;
+}
