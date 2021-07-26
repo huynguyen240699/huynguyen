@@ -86,6 +86,9 @@
 	.header-right-top{
 		display: inline-block;
 	}
+	.footer-mid ul li:nth-last-of-type(3){
+    	padding-top: 0;
+    }
 	.header-right{
 		margin-left: 23%;
 		width: 79%;
