@@ -481,6 +481,7 @@ footer{
 	position: relative;
 	background-image: url("./images/footer-bg.png");
 	background-size: cover;
+	font-family: Myriad Pro
 }
 .call-and-help{
 	width: 100%;
