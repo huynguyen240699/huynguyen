@@ -358,7 +358,7 @@ content{
 	position: absolute;
 	right: 15px;
    font-size: 22px;
-   bottom: 20px;v
+   bottom: 20px;
    font-family: VNlucida Handwriting;
 }
 .content-product .banner-top-img:nth-last-of-type(4)::before{
@@ -481,6 +481,7 @@ footer{
 	position: relative;
 	background-image: url("./images/footer-bg.png");
 	background-size: cover;
+	font-family: Myriad Pro
 }
 .call-and-help{
 	width: 100%;
@@ -563,7 +564,7 @@ footer .container{
 .footer-top-left a i{
 	position: absolute;
 	left: 37%;
-    top: 29%;
+    top: 28%;
     color: #EE4053;
 }
 .footer-top-right{

@@ -242,7 +242,7 @@
 		left: 68%	;
 	}
 	.slider .container .text input{
-		width: 74%;
+		width: 70%;
 		padding: 10px;
 		font-size: 15px;
 	}
@@ -259,6 +259,64 @@
     .footer-top-right{
     	padding-bottom: 15px;
     }
+    .content-product .banner-top-img{
+    	width: 100%;
+    }
+    .content-product .banner-bottom-img{
+    	width: 100%;
+    }
+    .content-product .title p{
+    	font-size: 25px	;
+    }
+    .content-product .title a{
+    	font-size: 18px;
+    }
+    .footer-bottom p{
+    	line-height: 30px;
+    }
+    .slider .container .text p{
+    	padding-bottom: 15px;
+    }
+}
+@media only screen and (max-width:  580px){
+	.control-radio{
+		top: 22.5%;
+	}
+	.slider .container .text p{
+		font-size: 40px;
+		padding-bottom: 15px;
+	}
+	.slider .container .text input{
+		width: 77%;
+    	padding: 8px;
+    	font-size: 14px;
+	}
+	footer {
+   	 	margin-top: 35%;
+	}
+	.footer-top-left a i {
+	    top: 13.5%;
+	}
+}
+@media only screen and (max-width:  500px){
+	.slider .container .text p{
+		padding-top: 15px;
+    	width: 100%;
+    	font-size: 30px;
+	}
+	.slider .container .text{
+		width: 100%;
+    	text-align: center;
+	}
+	.slider .container .text input{
+		width: 50%;
+	}
+	.content-product .title p{
+		width: 70%;
+	}
+	.content-product .title a{
+		width: 30%;
+	}
 }
 @media only screen and (max-width: 425px){
  	.header-right-top .search a i{
@@ -277,12 +335,12 @@
 		padding-top: 0;
 	}
 	.content-product .title p{
-		width: 65%;
+		width: 80%;
 		font-size: 22px;
 		padding-bottom: 0;
 	}
 	.content-product .title a{
-		width: 35%;
+		width: 20%;
 		padding-top: 0;
 	}
 	.content-product .banner-bottom-img:nth-last-of-type(1)::before{
@@ -332,12 +390,6 @@
 	.content-product .banner-bottom-img{
 		width: 100%;
 	}
-	.slider .container .img-product img{
-		display: none;
-	}
-	.slider .container .background-img{
-		display: none;
-	}
 	.slider .container .text{
 		width: 100%;
     	text-align: center;
@@ -378,11 +430,8 @@
 	}
 	.footer-top-left a i {
     	left: 74%;
-    	top: 20.5%;
+    	top: 20%;
 	}	
-	footer .container{
-		padding: 0;
-	}
 	.footer-bottom p{
 		margin: 0;
 		padding: 10px 0;
@@ -393,5 +442,8 @@
 	}
 	.slider .container .text p{
 		margin: 0	;
+	}
+	.content-product .products-list{
+		padding-top: 15px;
 	}
 }
