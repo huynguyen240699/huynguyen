@@ -440,4 +440,7 @@
 	.slider .container .text p{
 		margin: 0	;
 	}
+	.content-product .products-list{
+		padding-top: 15px;
+	}
 }
