@@ -15,6 +15,13 @@
   			});
 		});
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  			$("#more").click(function(){
+    			$(".menus-more").slideToggle("slow");
+  			});
+		});
+	</script>
 </head>
 <body>
 	<header>
@@ -79,7 +86,7 @@
 			</div>
 			<div class="mobile">
 				<div class="bars">
-					<a href=""><i id="flip" class="fa fa-bars"></i></a>
+					<i id="flip" class="fa fa-bars"></i>
 				</div>
 				<div class="account">
 					<a href=""><i class="fa fa-user"></i></a>
@@ -96,7 +103,7 @@
 							<a href="">About Us</a>
 						</li>
 						<li class="active">
-							<a href="">Shop</a>
+							<a href="">Shop</a>  <i id="more" class="fa fa-list"></i>
 							<div class="menus-more">
 								<ul>
 									<li><a href="">Dried Seafood Hoi Mei</a></li>

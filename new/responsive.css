@@ -314,10 +314,13 @@
     	float: left;
     	text-align: right;
     }
-   	.mobile a i{
+   	.mobile i{
     	font-size: 30px;
     	color: black;
     	padding-right: 15px;
+    }
+    .mobile i:hover{
+    	color: red;
     }
    	.mobile .menus {
     	width: 100%;
@@ -351,12 +354,10 @@
     	padding-left: 20px;
     	padding-right: 50%;
     }
-   	.mobile .menus .active{
-    	padding-bottom: 0;
-    }
    	.mobile .menus-more{
     	width: 100%;
     	text-align: center;
+    	display: none;
     }
    	.mobile .menus-more ul li a{
     	padding: 0 30px;
@@ -389,11 +390,14 @@
 	}
 	.mobile .menus .search a i{
 		position: absolute;
-    	top: 516px;
+    	bottom: 30px;
     	right: 3%;
     	font-size: 20px;
     	color: #555555;
     	z-index: 5;
+	}
+	.mobile .menus ul li i{
+		float: right;
 	}
 }
 @media only screen and (max-width:  580px){
