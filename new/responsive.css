@@ -27,6 +27,9 @@
 	.slider .container .text p{
 		margin-bottom: 0;
 	}
+	.mobile{
+		display: none;
+	}
 }
 @media only screen and (max-width: 1025.9px){
 	.product-img .product-img-right {
@@ -81,14 +84,14 @@
 	.slider .container .text input{
 		width: 55%;
 	}
+	.mobile{
+		display: none;
+	}
 }
 @media only screen and (max-width: 991.9px){
 	.header-right-top{
 		display: inline-block;
 	}
-	.footer-mid ul li:nth-last-of-type(3){
-    	padding-top: 0;
-    }
 	.header-right{
 		margin-left: 23%;
 		width: 79%;
@@ -192,6 +195,12 @@
 	.slider .container .text input {
 		width: 78%;
 	}
+	.footer-mid ul li:nth-last-of-type(3){
+		padding-top: 0;
+	}
+	.mobile{
+		display: none;
+	}
 }
 @media only screen and (max-width: 768px){
 	.header-left{
@@ -280,9 +289,112 @@
     .slider .container .text p{
     	padding-bottom: 15px;
     }
-    .footer-mid ul li:nth-last-of-type(3){
-    	padding-top: 0;
+    .header-right{
+    	display: none;
     }
+   	.mobile{
+    	width: 100%;
+    	position: relative;
+    	display: block;
+    }
+   	.mobile .bars{
+    	width: 70%;
+    	float: left;
+    }
+   	.mobile .bars a i{
+    	padding-left: 15px;
+    }
+   	.mobile .account{
+    	width: 15%;
+    	float: left;
+    	text-align: right;
+    }
+   	.mobile .cart{
+    	width: 15%;
+    	float: left;
+    	text-align: right;
+    }
+   	.mobile a i{
+    	font-size: 30px;
+    	color: black;
+    	padding-right: 15px;
+    }
+   	.mobile .menus {
+    	width: 100%;
+    	position: absolute;
+    	z-index: 10;
+    	background-color: #cccccc;
+    	top: 44px;
+    	padding-bottom: 15px;
+    	display: none;
+    }
+   	.mobile .menus ul{
+    	display: inline-block;
+    	width: calc( 100% - 30px);
+    	padding: 0 15px;
+    	margin: 0;
+    }
+   	.mobile .menus ul li{
+    	list-style-type: none;
+    	width: 100%;
+    	padding: 10px 0;
+    	border-bottom: 1px solid black;
+    }
+   	.mobile .menus ul li a:hover{
+    	color: #EE4053;
+    }
+   	.mobile .menus ul li a{
+    	color: black;
+    	font-weight: bold;
+    	font-size: 20px;
+    	width: 100%;
+    	padding-left: 20px;
+    	padding-right: 50%;
+    }
+   	.mobile .menus .active{
+    	padding-bottom: 0;
+    }
+   	.mobile .menus-more{
+    	width: 100%;
+    	text-align: center;
+    }
+   	.mobile .menus-more ul li a{
+    	padding: 0 30px;
+    	font-weight: inherit;
+    	font-size: 15px;
+    }
+   	.mobile .menus-more ul li:nth-last-of-type(1){
+    	border-bottom: none;
+    }
+   	.mobile .menus .language{
+    	width: 100%;
+    	display: flex;
+    	text-align: center;
+    	padding-top: 15px;
+    }
+   	.mobile .menus .language .choose{
+    	width: 50%;
+    }
+   	.mobile .menus .search{
+		width: calc(100% - 30px);
+		padding: 0 15px;
+		text-align: center;
+	}
+	.mobile .menus .search input{
+		width: 100%;
+		height: 40px;
+		border: 1px solid;
+		border-radius: 100px;
+		position: relative;
+	}
+	.mobile .menus .search a i{
+		position: absolute;
+    	top: 516px;
+    	right: 3%;
+    	font-size: 20px;
+    	color: #555555;
+    	z-index: 5;
+	}
 }
 @media only screen and (max-width:  580px){
 	.control-radio{
@@ -381,6 +493,9 @@
 	.header-right-menu .menu ul li{
 		width: 100%;
 	}
+	.control-radio{
+		display: none;
+	}
 	.content-product .banner-top{
 		display: inline-block;
 	}
@@ -397,9 +512,6 @@
 		width: 100%;
     	text-align: center;
 	}
-	.control-radio {
-   	 	right: 21px;
-	}	
 	.slider .container .text p{
 		margin: 0;
     	margin-top: 45px;
@@ -441,7 +553,7 @@
 	.footer-bottom p{
 		margin: 0;
 		padding: 10px 0;
-		font-size: 15px;
+		font-size: 10px;
 	}
 	.header-right-menu .menu ul li:hover i{
 		display: none;
@@ -451,21 +563,5 @@
 	}
 	.content-product .products-list{
 		padding-top: 15px;
-	}
-	.background img{
-		height: 250px;
-    	object-fit: cover;
-	}
-	.slider .container .background-img{
-		top: 82%;
-	}
-	.slider .container .img-product{
-		top: 84%;
-	}
-	.slider .container .text {
-    	top: 20px;
-	}
-	.slider .container .text p {
-   	 	font-size: 30px;
 	}
 }

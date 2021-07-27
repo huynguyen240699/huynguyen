@@ -7,6 +7,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+  			$("#flip").click(function(){
+    			$(".menus").slideToggle("slow");
+  			});
+		});
+	</script>
 </head>
 <body>
 	<header>
@@ -67,6 +75,56 @@
 						</li>
 					</ul>
 				    </div>
+				</div>
+			</div>
+			<div class="mobile">
+				<div class="bars">
+					<a href=""><i id="flip" class="fa fa-bars"></i></a>
+				</div>
+				<div class="account">
+					<a href=""><i class="fa fa-user"></i></a>
+				</div>
+				<div class="cart">
+					<a href=""><i class="fa fa-shopping-basket"></i></a>
+				</div>
+				<div class="menus">
+					<ul>
+						<li>
+							<a href="">Home</a>
+						</li>
+						<li>
+							<a href="">About Us</a>
+						</li>
+						<li class="active">
+							<a href="">Shop</a>
+							<div class="menus-more">
+								<ul>
+									<li><a href="">Dried Seafood Hoi Mei</a></li>
+									<li><a href="">Healthy Nutty</a></li>
+									<li><a href="">Ideal Food</a></li>
+									<li><a href="">Ideal Gold</a></li>
+									<li><a href="">Chuen Jia Fu</a></li>
+									<li><a href="">Spices Central</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="">Contact Us</a>
+						</li>
+					</ul>
+					<div class="language">
+							<div class="choose">
+								<img src="./images/logo-england.png">
+								<p>English</p>
+							</div>
+							<div class="choose">
+								<img src="./images/logo-china.png">
+								<p>中文</p>
+							</div>						
+					</div>
+					<div class="search">
+						<input type="text" name="search" id="search" placeholder="      Search..."><a href=""><i class="fa fa-search"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>

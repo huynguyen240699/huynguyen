@@ -175,6 +175,9 @@ a{
 .header-right-menu ul li:hover .menu-more a{
 	color: #ffffff;
 }
+.mobile{
+	display: none;
+}
 content{
 	width: 100%;
 	padding-bottom: 60px;
