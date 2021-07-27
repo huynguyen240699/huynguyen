@@ -396,8 +396,10 @@
     	color: #555555;
     	z-index: 5;
 	}
-	.mobile .menus ul li i{
-		float: right;
+	.mobile .menus .click{
+		position: absolute;
+		right: 15px;
+    	top: 95px;
 	}
 }
 @media only screen and (max-width:  580px){

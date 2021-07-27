@@ -21,6 +21,11 @@
     			$(".menus-more").slideToggle("slow");
   			});
 		});
+		$(document).ready(function(){
+  			$(".click").click(function(){
+    			$(".click i").toggleClass("fa-minus");
+  			});
+		});
 	</script>
 </head>
 <body>
@@ -103,7 +108,10 @@
 							<a href="">About Us</a>
 						</li>
 						<li class="active">
-							<a href="">Shop</a>  <i id="more" class="fa fa-list"></i>
+							<a href="">Shop</a> 
+							<div class="click">
+								<i id="more" class="fa fa-plus"></i>
+							</div>
 							<div class="menus-more">
 								<ul>
 									<li><a href="">Dried Seafood Hoi Mei</a></li>
